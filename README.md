@@ -17,7 +17,7 @@
  A api que utilizaremos para acessar os dados para a construção do nosso dataset utiliza um modelo hierárquico para estruturar os dados. De maneira a simplificar o acesso a determinadas situações pretendemos utilizar um modelo relacional de forma que simplifique para o usuário analisar as informações de uma maneira mais direta.
 
 ### Perguntas de análise a serem respondidas
-
+A partir dos modelos citados , será possível analisar como diversos fatores afetam a taxa de vitória e o desempenho geral dos jogadores , permitindo perceber quais heróis tem vantagem em relação aos outros, quais funcionam bem juntos, quais são as melhores combinações de itens. Além dessas análises gerais , será possível analisar como esses mesmos fatores afetam um jogador em específico. Também poderemos comparar se essas condições sofrem alterações dependendo de outras condições da partida como modo de jogo escolhido.
 ### Fontes de dados e operações a serem aplicadas
 
  Utilizaremos a api pública disponível em https://docs.opendota.com/. Pretendemos requisitar alguns dados e trabalhar em cima deles de forma a fornecer ao leitor relações entre os heróis utilizados nas partidas pelos jogadores, assim como suas habilidades. Refinar os dados coletados e apresentar de forma mais direta ao leitor.
