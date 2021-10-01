@@ -26,4 +26,4 @@ A partir dos modelos citados , será possível analisar como diversos fatores af
 
 
 ## Slides da Apresentação
- [PDF](https://docs.google.com/presentation/d/1AMuYdvCCHGHGg7qLdhIqGdSa24bUhVHd5tgz8DVj9io/edit#slide=id.p)
+ [PDF](slides/slideParcial.pdf)
