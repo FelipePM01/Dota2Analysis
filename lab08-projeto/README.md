@@ -1,6 +1,6 @@
 # Apresentação do Lab08 - Modelo Lógico e Análise de Dados em Grafos
 
-# Equipe `<nome da equipe>` - `<sigla da equipe>`
+# Equipe `Dota2Analysis` - `D2A`
 * `Hugo Carvalho de Almeida Navarro` - `198893`
 * `Matheus Augusto da Silva Cândido` - `241640`
 * `Felipe Pacheco Manoel` - `215347`
