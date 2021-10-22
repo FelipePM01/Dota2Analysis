@@ -1,3 +1,4 @@
+**Projeto Parcial entregue na data 10/01/2021 e movido para esta pasta na data 15/10/2021**
 # Dota2Analysis
 
 # Equipe `Dota2Analysis` - `D2A`
