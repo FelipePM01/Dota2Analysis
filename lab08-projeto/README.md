@@ -1,40 +1,27 @@
-# Modelo para Apresentação do Lab08 - Modelo Lógico e Análise de Dados em Grafos
+# Apresentação do Lab08 - Modelo Lógico e Análise de Dados em Grafos
 
-Estrutura de pastas:
-
-~~~
-├── README.md  <- arquivo apresentando a tarefa
-│
-└── images     <- arquivos de imagem usados na tarefa
-~~~
-
-# Equipe `<nome da equipe>` - `<sigla da equipe>`
+# Equipe `Dota2Analysis` - `D2A`
 * `Hugo Carvalho de Almeida Navarro` - `198893`
 * `Matheus Augusto da Silva Cândido` - `241640`
 * `Felipe Pacheco Manoel` - `215347`
 
 ## Modelo Lógico Combinado do Banco de Dados de Grafos
-> Coloque aqui o modelo ou modelos que serão usados pela equipe combinando os individuais, conforme especificação.
-> Utilize este [modelo de base](https://docs.google.com/presentation/d/10RN7bDKUka_Ro2_41WyEE76Wxm4AioiJOrsh6BRY3Kk/edit?usp=sharing) para construir o seu.
-> Coloque a imagem do PNG do seu modelo lógico como ilustrado abaixo (a imagem estará na pasta `image`):
 >
 > ![Modelo Lógico de Grafos](images/modelo-logico-grafos.PNG)
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 
-> Liste aqui as perguntas de pesquisa/análise combinadas e revisadas dos membros da equipe e respectivas análises.
->
 ### Pergunta/Análise 1
-> * Pergunta 1
+> * Pergunta 1: Como se organizam as pessoas em grupos de amigos dentro do DOTA 2?  
 >   
->   * Explicação sucinta da análise que será feita no grafo para atender à pergunta. Deve ser indicado explicitamente em qual das modalidades a análise se encaixa: centralidade; vulnerabilidade; comunidade/modularidade; motifs; predição de links.
+>   * Será utilizada as arestas com peso entre jogadores para tentar achar grupos em que as arestas ponderadas são mais densas entre si quando comparadas aos demais jogadores. A pergunta se encaixa na modalidade de comunidade/modularidade.
 
 ### Pergunta/Análise 2
-> * Pergunta 2
+> * Pergunta 2: Existem grupos que tendem a se encontrar mais nas filas ranqueadas? Esses grupos correspondem a pessoas com ranking e MMR similares?
 >   
->   * Explicação sucinta da análise que será feita no grafo para atender à pergunta. Deve ser indicado explicitamente em qual das modalidades a análise se encaixa: centralidade; vulnerabilidade; comunidade/modularidade; motifs; predição de links.
+>   * Será utilizada as arestas entre jogadores para tentar achar grupos em que as arestar são mais densas entre si comparadas aos demais jogadores, em seguida iremos checar as comunidades encontradas para ver se o MMR e o rank são similares. A pergunta se encaixa na modalidade de comunidade/modularidade.
 
 ### Pergunta/Análise 3
-> * Pergunta 3
+> * Pergunta 3: Existem jogadores que se destacam em relação à centralidade? Caso existam, o que os diferenciam?
 >   
->   * Explicação sucinta da análise que será feita no grafo para atender à pergunta. Deve ser indicado explicitamente em qual das modalidades a análise se encaixa: centralidade; vulnerabilidade; comunidade/modularidade; motifs; predição de links.
+>   * Utilizando o algoritmo de Page Rank, vamos tentar encontrar os principais jogadores e em seguida comparar seus atributos com a media para entender o que os torna especiais. A pergunta se encaixa na modalidade de centralidade
