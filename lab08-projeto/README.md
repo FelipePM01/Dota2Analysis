@@ -7,6 +7,7 @@
 
 ## Modelo Lógico Combinado do Banco de Dados de Grafos
 >
+>![Rede de grafos](images/rede-grafo.PNG)
 > ![Modelo Lógico de Grafos](images/modelo-logico-grafos.PNG)
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
