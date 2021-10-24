@@ -8,6 +8,7 @@
 ## Modelo Lógico Combinado do Banco de Dados de Grafos
 >
 >![Rede de grafos](images/rede-grafo.PNG)
+A partir das partidas, vamos utilizar o modelo acima como base e faremos nossas projeções no modelo abaixo.
 > ![Modelo Lógico de Grafos](images/modelo-logico-grafos.PNG)
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
