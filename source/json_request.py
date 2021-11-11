@@ -1,41 +1,81 @@
 import requests
 import json
+import csv
+import time
 
-def request_json():
-    api_response = requests.get('https://api.opendota.com/api/matches/271145478?api_key=YOUR_API_KEY')
+def read_csv():
+    visited_matches = []
+    with open('dota_data.csv') as dota_data_file:
+        csv_reader = csv.reader(dota_data_file, delimiter=',')
+        line_count = 0
+        for row in csv_reader:
+            if line_count == 0:
+                print(f'Column names are {", ".join(row)}')
+                line_count += 1
+            else:
+                if row:
+                    visited_matches.append(int(row[0]))
+                    line_count += 1
+        print(f'Processed {line_count} lines.')
+
+    return visited_matches
+
+def request_public_matches_json(visitated_matches):
+    api_response = requests.get('https://api.opendota.com/api/publicmatches?api_key=220935B4AB4C12F87AB7B4CB62D6CFBB')
 
     if api_response.status_code != 200:
-        print("Erro ao realizar chamada!")
+        print("API Request Error - Public Matches not found")
 
         return 0
     else:
-        api_response_json = api_response.json()
-        print(json.dumps(api_response_json, indent=3))
+        public_matches = api_response.json()
 
-        matches = api_response_json["match_id"]
+        public_matches_info = []
 
-        #Construcao de um dicionario para melhor visualizacao
-        #Precisa ser contruido com o index desejado
-        '''
-        index = ["Match_Id"]
-        data_json_api = []
-        for match in matches["match_id"]:
-            if match["game_mode"] == 2 and match["human_players"] == 10:
-                data_json_api.append(match["match_id"])
+        for match in public_matches:
+            if match["game_mode"] == 22 and match["avg_mmr"] is not None:
+                if match["match_id"] not in visitated_matches:
+                    match_info = []
+                    match_info.append(match["match_id"])
+                    match_info.append(match["avg_mmr"])
 
+                    public_matches_info.append(match_info)
+                    print("New match found: " + str(match["match_id"]))
+        print(public_matches_info)
+        return public_matches_info
 
-                zip_iterator = zip(index, data_json_api)
+def write_csv(new_matches):
+    import csv
 
-                a_dictionary = dict(zip_iterator)
+    with open('dota_data.csv', mode='a') as dota_data_file:
+        dota_data_writer = csv.writer(dota_data_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
-                print(a_dictionary)
+        for match in new_matches:
+            api_match_info = requests.get(
+                'https://api.opendota.com/api/matches/' + str(match[0]) + '?api_key=220935B4AB4C12F87AB7B4CB62D6CFBB')
 
-        return data_json_api
-        '''
-    return 0
+            if api_match_info.status_code != 200:
+                print("API Request Error! Match info not found")
+                time.sleep(.2)
+                return 0
+            else:
+                match_info = api_match_info.json()
+
+                dota_data_writer.writerow([match[0], match[1], match_info["players"][0]["account_id"], match_info["players"][1]["account_id"],match_info["players"][2]["account_id"],match_info["players"][3]["account_id"],match_info["players"][4]["account_id"],\
+                                           match_info["players"][5]["account_id"], match_info["players"][6]["account_id"],match_info["players"][7]["account_id"],match_info["players"][8]["account_id"],match_info["players"][9]["account_id"],\
+                                           match_info["radiant_win"], match_info["first_blood_time"], match_info["duration"]])
+                print("New match added to database: " + str(match[0]))
+                time.sleep(.2)
+
 
 def main():
-    dicionario_json = request_json()
+    for i in range(0, 5):
+        visitated_matches = read_csv()
+        time.sleep(1)
+        new_matches = request_public_matches_json(visitated_matches)
+        time.sleep(1)
+        write_csv(new_matches)
+        time.sleep(30)
     return
 
 if __name__ == '__main__':
