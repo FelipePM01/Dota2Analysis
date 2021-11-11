@@ -1,6 +1,6 @@
 import csv
 
-def insert_jogador(arquivo,nome,mmr,rank,id,taxa):
+def insert_jogador(arquivo,nome,mmr,rank,id):
     fieldnames = ['nome', 'mmr', 'rank','id']
     encontrado=False
     with open(arquivo, mode='r') as csv_file:
