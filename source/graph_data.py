@@ -1,7 +1,7 @@
 import csv
 
-def insert_jogador(arquivo,nome,mmr,rank,id):
-    fieldnames = ['nome', 'mmr', 'rank','id']
+def insert_jogador(arquivo,id,mmr,rank):
+    fieldnames = ['id', 'mmr', 'rank']
     encontrado=False
     with open(arquivo, mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
@@ -15,10 +15,10 @@ def insert_jogador(arquivo,nome,mmr,rank,id):
         with open(arquivo, mode='w') as csv_file:
             writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
             writer.writeheader()
-            writer.writerow({'nome': str(nome), 'mmr': str(mmr), 'id': str(id),'rank':str(rank)})
+            writer.writerow({'id': str(id), 'mmr': str(mmr),'rank':str(rank)})
 
 
-def create_jogado(arquivo,id1,id2):
+def create_jogador(arquivo,id1,id2):
     fieldnames = ['jogador 1', 'jogador 2']
     encontrado=False
     with open(arquivo, mode='r') as csv_file:
