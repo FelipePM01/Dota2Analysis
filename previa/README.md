@@ -39,15 +39,15 @@ Jogador(_Player ID_,MMR, Rank)
 
 título do arquivo/base | link | breve descrição
 ----- | ----- | -----
-`match_data` | `(data/processed/match_data.csv)` | `Arquivo csv com as partidas que compõe o data set`
-`player_data` | `(data/processed/player_data.csv)`| `Arquivo csv com os jogadores que compõe o data set`
+`match_data` | `[](data/processed/match_data.csv)` | `Arquivo csv com as partidas que compõe o data set`
+`player_data` | `[](data/processed/player_data.csv)`| `Arquivo csv com os jogadores que compõe o data set`
 
 
 ## Bases de Dados
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`OpenDota API` | `https://docs.opendota.com/` | `API que apresenta diferetes requests para obter informções do jogo Dota`
+`OpenDota API` | `[](https://docs.opendota.com/)` | `API que apresenta diferetes requests para obter informções do jogo Dota`
 
 ## Operações realizadas para a construção do dataset
 
