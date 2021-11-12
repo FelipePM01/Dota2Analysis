@@ -52,6 +52,7 @@ título da base | link | breve descrição
 ## Operações realizadas para a construção do dataset
 
 > [Match](src/match_data_request.py)
+>
 > [Player](src/player_data_request.py)
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
@@ -69,5 +70,8 @@ título da base | link | breve descrição
 ### Pergunta/Análise 3
 > * Pergunta 3: Existem jogadores que se destacam em relação à centralidade? Caso existam, o que os diferenciam?
 >   
->   * Utilizando o algoritmo de Page Rank, vamos tentar encontrar os principais jogadores e em seguida comparar seus atributos com a media para entender o que os torna especiais. A pergunta se encaixa na modalidade de centralidade
+>   * Utilizando o algoritmo de Page Rank, vamos tentar encontrar os principais jogadores e em seguida comparar seus atributos com a media para entender o que os torna especiais. A pergunta se encaixa na modalidade de centralidade.
+
+>
+>
 > [Querie Grafo](src/cypher.md)
