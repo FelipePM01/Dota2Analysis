@@ -5,7 +5,7 @@ import time
 
 def read_csv():
     visited_matches = []
-    with open('dota_data.csv') as dota_data_file:
+    with open('match_data.csv') as dota_data_file:
         csv_reader = csv.reader(dota_data_file, delimiter=',')
         line_count = 0
         for row in csv_reader:
@@ -20,7 +20,7 @@ def read_csv():
 
     return visited_matches
 
-def request_public_matches_json(visitated_matches):
+def get_new_match_ids(visited_matches):
     api_response = requests.get('https://api.opendota.com/api/publicmatches?api_key=220935B4AB4C12F87AB7B4CB62D6CFBB')
 
     if api_response.status_code != 200:
@@ -34,7 +34,7 @@ def request_public_matches_json(visitated_matches):
 
         for match in public_matches:
             if match["game_mode"] == 22 and match["avg_mmr"] is not None:
-                if match["match_id"] not in visitated_matches:
+                if match["match_id"] not in visited_matches:
                     match_info = []
                     match_info.append(match["match_id"])
                     match_info.append(match["avg_mmr"])
@@ -45,9 +45,7 @@ def request_public_matches_json(visitated_matches):
         return public_matches_info
 
 def write_csv(new_matches):
-    import csv
-
-    with open('dota_data.csv', mode='a') as dota_data_file:
+    with open('match_data.csv', mode='a') as dota_data_file:
         dota_data_writer = csv.writer(dota_data_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
         for match in new_matches:
@@ -69,10 +67,10 @@ def write_csv(new_matches):
 
 
 def main():
-    for i in range(0, 5):
-        visitated_matches = read_csv()
+    for i in range(0, 50):
+        visited_matches = read_csv()
         time.sleep(1)
-        new_matches = request_public_matches_json(visitated_matches)
+        new_matches = get_new_match_ids(visited_matches)
         time.sleep(1)
         write_csv(new_matches)
         time.sleep(30)
