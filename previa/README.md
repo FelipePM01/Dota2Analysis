@@ -14,7 +14,7 @@
  Com o crescimento constante dos eSports ao redor do mundo, o cenário tende a ser cada vez mais competitivo e disputado. Assim, junto com esses jogos, cresce a necessidade de ferramentas capaz de prover insights aprofundados que fornecam algum tipo de vantagem ao jogador e a equipe. Como objeto de estudo, vimos no DOTA 2 um ambiente rico em informações públicas que podem ser analisadas afim de atingirmos o objetivo citado.
 
 ## Slides da Apresentação
-> (slides/previa.pdf)
+> [Slides previa](slides/previa.pdf)
 
 ## Modelo Conceitual Preliminar
 
@@ -51,8 +51,8 @@ título da base | link | breve descrição
 
 ## Operações realizadas para a construção do dataset
 
-> (src/match_data_request.py)
-> (src/player_data_request.py)
+> [Match](src/match_data_request.py)
+> [Player](src/player_data_request.py)
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 
