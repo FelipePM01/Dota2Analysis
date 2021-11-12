@@ -1,0 +1,491 @@
+nome,funcao
+Anti-Mage,Carry
+Anti-Mage,Escape
+Anti-Mage,Nuker
+Axe,Initiator
+Axe,Durable
+Axe,Disabler
+Axe,Jungler
+Axe,Carry
+Bane,Support
+Bane,Disabler
+Bane,Nuker
+Bane,Durable
+Bloodseeker,Carry
+Bloodseeker,Disabler
+Bloodseeker,Jungler
+Bloodseeker,Nuker
+Bloodseeker,Initiator
+Crystal Maiden,Support
+Crystal Maiden,Disabler
+Crystal Maiden,Nuker
+Crystal Maiden,Jungler
+Drow Ranger,Carry
+Drow Ranger,Disabler
+Drow Ranger,Pusher
+Earthshaker,Support
+Earthshaker,Initiator
+Earthshaker,Disabler
+Earthshaker,Nuker
+Juggernaut,Carry
+Juggernaut,Pusher
+Juggernaut,Escape
+Mirana,Carry
+Mirana,Support
+Mirana,Escape
+Mirana,Nuker
+Mirana,Disabler
+Morphling,Carry
+Morphling,Escape
+Morphling,Durable
+Morphling,Nuker
+Morphling,Disabler
+Shadow Fiend,Carry
+Shadow Fiend,Nuker
+Phantom Lancer,Carry
+Phantom Lancer,Escape
+Phantom Lancer,Pusher
+Phantom Lancer,Nuker
+Puck,Initiator
+Puck,Disabler
+Puck,Escape
+Puck,Nuker
+Pudge,Disabler
+Pudge,Initiator
+Pudge,Durable
+Pudge,Nuker
+Razor,Carry
+Razor,Durable
+Razor,Nuker
+Razor,Pusher
+Sand King,Initiator
+Sand King,Disabler
+Sand King,Support
+Sand King,Nuker
+Sand King,Escape
+Sand King,Jungler
+Storm Spirit,Carry
+Storm Spirit,Escape
+Storm Spirit,Nuker
+Storm Spirit,Initiator
+Storm Spirit,Disabler
+Sven,Carry
+Sven,Disabler
+Sven,Initiator
+Sven,Durable
+Sven,Nuker
+Tiny,Carry
+Tiny,Nuker
+Tiny,Pusher
+Tiny,Initiator
+Tiny,Durable
+Tiny,Disabler
+Vengeful Spirit,Support
+Vengeful Spirit,Initiator
+Vengeful Spirit,Disabler
+Vengeful Spirit,Nuker
+Vengeful Spirit,Escape
+Windranger,Carry
+Windranger,Support
+Windranger,Disabler
+Windranger,Escape
+Windranger,Nuker
+Zeus,Nuker
+Zeus,Carry
+Kunkka,Carry
+Kunkka,Support
+Kunkka,Disabler
+Kunkka,Initiator
+Kunkka,Durable
+Kunkka,Nuker
+Lina,Support
+Lina,Carry
+Lina,Nuker
+Lina,Disabler
+Lion,Support
+Lion,Disabler
+Lion,Nuker
+Lion,Initiator
+Shadow Shaman,Support
+Shadow Shaman,Pusher
+Shadow Shaman,Disabler
+Shadow Shaman,Nuker
+Shadow Shaman,Initiator
+Slardar,Carry
+Slardar,Durable
+Slardar,Initiator
+Slardar,Disabler
+Slardar,Escape
+Tidehunter,Initiator
+Tidehunter,Durable
+Tidehunter,Disabler
+Tidehunter,Nuker
+Tidehunter,Carry
+Witch Doctor,Support
+Witch Doctor,Nuker
+Witch Doctor,Disabler
+Lich,Support
+Lich,Nuker
+Riki,Carry
+Riki,Escape
+Riki,Disabler
+Enigma,Disabler
+Enigma,Jungler
+Enigma,Initiator
+Enigma,Pusher
+Tinker,Carry
+Tinker,Nuker
+Tinker,Pusher
+Sniper,Carry
+Sniper,Nuker
+Necrophos,Carry
+Necrophos,Nuker
+Necrophos,Durable
+Necrophos,Disabler
+Warlock,Support
+Warlock,Initiator
+Warlock,Disabler
+Beastmaster,Initiator
+Beastmaster,Disabler
+Beastmaster,Durable
+Beastmaster,Nuker
+Queen of Pain,Carry
+Queen of Pain,Nuker
+Queen of Pain,Escape
+Venomancer,Support
+Venomancer,Nuker
+Venomancer,Initiator
+Venomancer,Pusher
+Venomancer,Disabler
+Faceless Void,Carry
+Faceless Void,Initiator
+Faceless Void,Disabler
+Faceless Void,Escape
+Faceless Void,Durable
+Wraith King,Carry
+Wraith King,Support
+Wraith King,Durable
+Wraith King,Disabler
+Wraith King,Initiator
+Death Prophet,Carry
+Death Prophet,Pusher
+Death Prophet,Nuker
+Death Prophet,Disabler
+Phantom Assassin,Carry
+Phantom Assassin,Escape
+Pugna,Nuker
+Pugna,Pusher
+Templar Assassin,Carry
+Templar Assassin,Escape
+Viper,Carry
+Viper,Durable
+Viper,Initiator
+Viper,Disabler
+Luna,Carry
+Luna,Nuker
+Luna,Pusher
+Dragon Knight,Carry
+Dragon Knight,Pusher
+Dragon Knight,Durable
+Dragon Knight,Disabler
+Dragon Knight,Initiator
+Dragon Knight,Nuker
+Dazzle,Support
+Dazzle,Nuker
+Dazzle,Disabler
+Clockwerk,Initiator
+Clockwerk,Disabler
+Clockwerk,Durable
+Clockwerk,Nuker
+Leshrac,Carry
+Leshrac,Support
+Leshrac,Nuker
+Leshrac,Pusher
+Leshrac,Disabler
+Nature's Prophet,Carry
+Nature's Prophet,Jungler
+Nature's Prophet,Pusher
+Nature's Prophet,Escape
+Nature's Prophet,Nuker
+Lifestealer,Carry
+Lifestealer,Durable
+Lifestealer,Jungler
+Lifestealer,Escape
+Lifestealer,Disabler
+Dark Seer,Initiator
+Dark Seer,Jungler
+Dark Seer,Escape
+Dark Seer,Disabler
+Clinkz,Carry
+Clinkz,Escape
+Clinkz,Pusher
+Omniknight,Support
+Omniknight,Durable
+Omniknight,Nuker
+Enchantress,Support
+Enchantress,Jungler
+Enchantress,Pusher
+Enchantress,Durable
+Enchantress,Disabler
+Huskar,Carry
+Huskar,Durable
+Huskar,Initiator
+Night Stalker,Carry
+Night Stalker,Initiator
+Night Stalker,Durable
+Night Stalker,Disabler
+Night Stalker,Nuker
+Broodmother,Carry
+Broodmother,Pusher
+Broodmother,Escape
+Broodmother,Nuker
+Bounty Hunter,Escape
+Bounty Hunter,Nuker
+Weaver,Carry
+Weaver,Escape
+Jakiro,Support
+Jakiro,Nuker
+Jakiro,Pusher
+Jakiro,Disabler
+Batrider,Initiator
+Batrider,Jungler
+Batrider,Disabler
+Batrider,Escape
+Chen,Support
+Chen,Jungler
+Chen,Pusher
+Spectre,Carry
+Spectre,Durable
+Spectre,Escape
+Ancient Apparition,Support
+Ancient Apparition,Disabler
+Ancient Apparition,Nuker
+Doom,Carry
+Doom,Disabler
+Doom,Initiator
+Doom,Durable
+Doom,Nuker
+Ursa,Carry
+Ursa,Jungler
+Ursa,Durable
+Ursa,Disabler
+Spirit Breaker,Carry
+Spirit Breaker,Initiator
+Spirit Breaker,Disabler
+Spirit Breaker,Durable
+Spirit Breaker,Escape
+Gyrocopter,Carry
+Gyrocopter,Nuker
+Gyrocopter,Disabler
+Alchemist,Carry
+Alchemist,Support
+Alchemist,Durable
+Alchemist,Disabler
+Alchemist,Initiator
+Alchemist,Nuker
+Invoker,Carry
+Invoker,Nuker
+Invoker,Disabler
+Invoker,Escape
+Invoker,Pusher
+Silencer,Carry
+Silencer,Support
+Silencer,Disabler
+Silencer,Initiator
+Silencer,Nuker
+Outworld Devourer,Carry
+Outworld Devourer,Nuker
+Outworld Devourer,Disabler
+Lycan,Carry
+Lycan,Pusher
+Lycan,Jungler
+Lycan,Durable
+Lycan,Escape
+Brewmaster,Carry
+Brewmaster,Initiator
+Brewmaster,Durable
+Brewmaster,Disabler
+Brewmaster,Nuker
+Shadow Demon,Support
+Shadow Demon,Disabler
+Shadow Demon,Initiator
+Shadow Demon,Nuker
+Lone Druid,Carry
+Lone Druid,Pusher
+Lone Druid,Jungler
+Lone Druid,Durable
+Chaos Knight,Carry
+Chaos Knight,Disabler
+Chaos Knight,Durable
+Chaos Knight,Pusher
+Chaos Knight,Initiator
+Meepo,Carry
+Meepo,Escape
+Meepo,Nuker
+Meepo,Disabler
+Meepo,Initiator
+Meepo,Pusher
+Treant Protector,Support
+Treant Protector,Initiator
+Treant Protector,Durable
+Treant Protector,Disabler
+Treant Protector,Escape
+Ogre Magi,Support
+Ogre Magi,Nuker
+Ogre Magi,Disabler
+Ogre Magi,Durable
+Ogre Magi,Initiator
+Undying,Support
+Undying,Durable
+Undying,Disabler
+Undying,Nuker
+Rubick,Support
+Rubick,Disabler
+Rubick,Nuker
+Disruptor,Support
+Disruptor,Disabler
+Disruptor,Nuker
+Disruptor,Initiator
+Nyx Assassin,Disabler
+Nyx Assassin,Nuker
+Nyx Assassin,Initiator
+Nyx Assassin,Escape
+Naga Siren,Carry
+Naga Siren,Support
+Naga Siren,Pusher
+Naga Siren,Disabler
+Naga Siren,Initiator
+Naga Siren,Escape
+Keeper of the Light,Support
+Keeper of the Light,Nuker
+Keeper of the Light,Disabler
+Keeper of the Light,Jungler
+Io,Support
+Io,Escape
+Io,Nuker
+Visage,Support
+Visage,Nuker
+Visage,Durable
+Visage,Disabler
+Visage,Pusher
+Slark,Carry
+Slark,Escape
+Slark,Disabler
+Slark,Nuker
+Medusa,Carry
+Medusa,Disabler
+Medusa,Durable
+Troll Warlord,Carry
+Troll Warlord,Pusher
+Troll Warlord,Disabler
+Troll Warlord,Durable
+Centaur Warrunner,Durable
+Centaur Warrunner,Initiator
+Centaur Warrunner,Disabler
+Centaur Warrunner,Nuker
+Centaur Warrunner,Escape
+Magnus,Initiator
+Magnus,Disabler
+Magnus,Nuker
+Magnus,Escape
+Timbersaw,Nuker
+Timbersaw,Durable
+Timbersaw,Escape
+Bristleback,Carry
+Bristleback,Durable
+Bristleback,Initiator
+Bristleback,Nuker
+Tusk,Initiator
+Tusk,Disabler
+Tusk,Nuker
+Skywrath Mage,Support
+Skywrath Mage,Nuker
+Skywrath Mage,Disabler
+Abaddon,Support
+Abaddon,Carry
+Abaddon,Durable
+Elder Titan,Initiator
+Elder Titan,Disabler
+Elder Titan,Nuker
+Elder Titan,Durable
+Legion Commander,Carry
+Legion Commander,Disabler
+Legion Commander,Initiator
+Legion Commander,Durable
+Legion Commander,Nuker
+Techies,Nuker
+Techies,Disabler
+Ember Spirit,Carry
+Ember Spirit,Escape
+Ember Spirit,Nuker
+Ember Spirit,Disabler
+Ember Spirit,Initiator
+Earth Spirit,Nuker
+Earth Spirit,Escape
+Earth Spirit,Disabler
+Earth Spirit,Initiator
+Earth Spirit,Durable
+Underlord,Support
+Underlord,Nuker
+Underlord,Disabler
+Underlord,Durable
+Underlord,Escape
+Terrorblade,Carry
+Terrorblade,Pusher
+Terrorblade,Nuker
+Phoenix,Support
+Phoenix,Nuker
+Phoenix,Initiator
+Phoenix,Escape
+Phoenix,Disabler
+Oracle,Support
+Oracle,Nuker
+Oracle,Disabler
+Oracle,Escape
+Winter Wyvern,Support
+Winter Wyvern,Disabler
+Winter Wyvern,Nuker
+Arc Warden,Carry
+Arc Warden,Escape
+Arc Warden,Nuker
+Monkey King,Carry
+Monkey King,Escape
+Monkey King,Disabler
+Monkey King,Initiator
+Dark Willow,Support
+Dark Willow,Nuker
+Dark Willow,Disabler
+Dark Willow,Escape
+Pangolier,Carry
+Pangolier,Nuker
+Pangolier,Disabler
+Pangolier,Durable
+Pangolier,Escape
+Pangolier,Initiator
+Grimstroke,Support
+Grimstroke,Nuker
+Grimstroke,Disabler
+Grimstroke,Escape
+Hoodwink,Support
+Hoodwink,Nuker
+Hoodwink,Escape
+Hoodwink,Disabler
+Void Spirit,Carry
+Void Spirit,Escape
+Void Spirit,Nuker
+Void Spirit,Disabler
+Snapfire,Support
+Snapfire,Nuker
+Snapfire,Disabler
+Snapfire,Escape
+Mars,Carry
+Mars,Initiator
+Mars,Disabler
+Mars,Durable
+Dawnbreaker,Carry
+Dawnbreaker,Durable
+Marci,Support
+Marci,Carry
+Marci,Initiator
+Marci,Disabler
+Marci,Escape
