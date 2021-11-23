@@ -54,11 +54,15 @@ def create_jogador(match_id, duo_id_list):
         for duo in duo_id_list:
             dota_data_writer.writerow([match_id, duo[0], duo[1]])
 
+def ocorrencies_count():
+    return
+
 def main():
     visitated_matches = read_csv()
     time.sleep(1)
     get_new_two_player_ids(visitated_matches)
 
+    ocorrencies_count()
     return
 
 
