@@ -5,7 +5,7 @@ import time
 
 def read_csv():
     visited_matches = []
-    with open('match_data.csv') as dota_data_file:
+    with open('data/processed/match_data.csv') as dota_data_file:
         csv_reader = csv.reader(dota_data_file, delimiter=',')
         line_count = 0
         for row in csv_reader:
@@ -45,7 +45,7 @@ def get_new_match_ids(visited_matches):
         return public_matches_info
 
 def write_csv(new_matches):
-    with open('match_data.csv', mode='a') as dota_data_file:
+    with open('data/processed/match_data.csv', mode='a') as dota_data_file:
         dota_data_writer = csv.writer(dota_data_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
         for match in new_matches:
