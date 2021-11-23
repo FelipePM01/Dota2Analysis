@@ -1,38 +1,66 @@
+import requests
+import json
 import csv
+import time
+from itertools import combinations
 
-def insert_jogador(arquivo,id,mmr,rank):
-    fieldnames = ['id', 'mmr', 'rank']
-    encontrado=False
-    with open(arquivo, mode='r') as csv_file:
-        csv_reader = csv.DictReader(csv_file)
+
+def read_csv():
+    visited_matches = []
+    with open('data/processed/graph_data.csv') as dota_data_file:
+        csv_reader = csv.reader(dota_data_file, delimiter=',')
         line_count = 0
         for row in csv_reader:
-            if line_count != 0:
-                if row['id']==id:
-                    encontrado=True
-                line_count+=1
-    if not encontrado:
-        with open(arquivo, mode='w') as csv_file:
-            writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerow({'id': str(id), 'mmr': str(mmr),'rank':str(rank)})
+            if line_count == 0:
+                print(f'Column names are {", ".join(row)}')
+                line_count += 1
+            else:
+                if row and row not in visited_matches:
+                    visited_matches.append(row[0])
+                    line_count += 1
+        print(f'Processed {line_count} lines.')
 
+    return visited_matches
 
-def create_jogador(arquivo,id1,id2):
-    fieldnames = ['jogador 1', 'jogador 2']
-    encontrado=False
-    with open(arquivo, mode='r') as csv_file:
-        csv_reader = csv.DictReader(csv_file)
+def get_new_two_player_ids(visited_matches):
+    with open('data/processed/match_data.csv') as dota_data_file:
+        csv_reader = csv.reader(dota_data_file, delimiter=',')
         line_count = 0
-        linha=0
         for row in csv_reader:
-            if line_count != 0:
-                if row['jogador1']==id1 and row['jogador2']==id2:
-                    encontrado=True
-                    linha=line_count
-                line_count+=1
-    if not encontrado:
-        with open(arquivo, mode='w') as csv_file:
-            writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerow({'jogador 1': str(id1), 'jogador 2': str(id2)})
+            if line_count == 0:
+                line_count += 1
+            else:
+                if row:
+                    players_in_match = []
+                    if row[0] not in visited_matches:
+                        visited_matches.append(int(row[0]))
+
+                        for column in range(2,12):
+                            if row[column] != "":
+                                players_in_match.append(int(row[column]))
+
+                        duo_id_list = list(combinations(players_in_match, 2))
+
+                        create_jogador(row[0], duo_id_list)
+
+                        line_count += 1
+        print(f'Processed {line_count} lines.')
+
+
+def create_jogador(match_id, duo_id_list):
+    with open('data/processed/graph_data.csv', mode='a') as dota_data_file:
+        dota_data_writer = csv.writer(dota_data_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+
+        for duo in duo_id_list:
+            dota_data_writer.writerow([match_id, duo[0], duo[1]])
+
+def main():
+    visitated_matches = read_csv()
+    time.sleep(1)
+    get_new_two_player_ids(visitated_matches)
+
+    return
+
+
+if __name__ == '__main__':
+    main()

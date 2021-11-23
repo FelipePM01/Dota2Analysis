@@ -1,0 +1,123 @@
+nome,atributo_primario,tipo_ataque
+Anti-Mage,agi,Melee
+Axe,str,Melee
+Bane,int,Ranged
+Bloodseeker,agi,Melee
+Crystal Maiden,int,Ranged
+Drow Ranger,agi,Ranged
+Earthshaker,str,Melee
+Juggernaut,agi,Melee
+Mirana,agi,Ranged
+Morphling,agi,Ranged
+Shadow Fiend,agi,Ranged
+Phantom Lancer,agi,Melee
+Puck,int,Ranged
+Pudge,str,Melee
+Razor,agi,Ranged
+Sand King,str,Melee
+Storm Spirit,int,Ranged
+Sven,str,Melee
+Tiny,str,Melee
+Vengeful Spirit,agi,Ranged
+Windranger,int,Ranged
+Zeus,int,Ranged
+Kunkka,str,Melee
+Lina,int,Ranged
+Lion,int,Ranged
+Shadow Shaman,int,Ranged
+Slardar,str,Melee
+Tidehunter,str,Melee
+Witch Doctor,int,Ranged
+Lich,int,Ranged
+Riki,agi,Melee
+Enigma,int,Ranged
+Tinker,int,Ranged
+Sniper,agi,Ranged
+Necrophos,int,Ranged
+Warlock,int,Ranged
+Beastmaster,str,Melee
+Queen of Pain,int,Ranged
+Venomancer,agi,Ranged
+Faceless Void,agi,Melee
+Wraith King,str,Melee
+Death Prophet,int,Ranged
+Phantom Assassin,agi,Melee
+Pugna,int,Ranged
+Templar Assassin,agi,Ranged
+Viper,agi,Ranged
+Luna,agi,Ranged
+Dragon Knight,str,Melee
+Dazzle,int,Ranged
+Clockwerk,str,Melee
+Leshrac,int,Ranged
+Nature's Prophet,int,Ranged
+Lifestealer,str,Melee
+Dark Seer,int,Melee
+Clinkz,agi,Ranged
+Omniknight,str,Melee
+Enchantress,int,Ranged
+Huskar,str,Ranged
+Night Stalker,str,Melee
+Broodmother,agi,Melee
+Bounty Hunter,agi,Melee
+Weaver,agi,Ranged
+Jakiro,int,Ranged
+Batrider,int,Ranged
+Chen,int,Ranged
+Spectre,agi,Melee
+Ancient Apparition,int,Ranged
+Doom,str,Melee
+Ursa,agi,Melee
+Spirit Breaker,str,Melee
+Gyrocopter,agi,Ranged
+Alchemist,str,Melee
+Invoker,int,Ranged
+Silencer,int,Ranged
+Outworld Devourer,int,Ranged
+Lycan,str,Melee
+Brewmaster,str,Melee
+Shadow Demon,int,Ranged
+Lone Druid,agi,Ranged
+Chaos Knight,str,Melee
+Meepo,agi,Melee
+Treant Protector,str,Melee
+Ogre Magi,int,Melee
+Undying,str,Melee
+Rubick,int,Ranged
+Disruptor,int,Ranged
+Nyx Assassin,agi,Melee
+Naga Siren,agi,Melee
+Keeper of the Light,int,Ranged
+Io,str,Ranged
+Visage,int,Ranged
+Slark,agi,Melee
+Medusa,agi,Ranged
+Troll Warlord,agi,Ranged
+Centaur Warrunner,str,Melee
+Magnus,str,Melee
+Timbersaw,str,Melee
+Bristleback,str,Melee
+Tusk,str,Melee
+Skywrath Mage,int,Ranged
+Abaddon,str,Melee
+Elder Titan,str,Melee
+Legion Commander,str,Melee
+Techies,int,Ranged
+Ember Spirit,agi,Melee
+Earth Spirit,str,Melee
+Underlord,str,Melee
+Terrorblade,agi,Melee
+Phoenix,str,Ranged
+Oracle,int,Ranged
+Winter Wyvern,int,Ranged
+Arc Warden,agi,Ranged
+Monkey King,agi,Melee
+Dark Willow,int,Ranged
+Pangolier,agi,Melee
+Grimstroke,int,Ranged
+Hoodwink,agi,Ranged
+Void Spirit,int,Melee
+Snapfire,str,Ranged
+Mars,str,Melee
+Dawnbreaker,str,Melee
+Marci,str,Melee
