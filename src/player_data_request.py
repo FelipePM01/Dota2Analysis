@@ -18,7 +18,7 @@ def read_csv():
                     visited_players.append(row[0])
                     line_count += 1
         print(f'Processed {line_count} lines.')
-    print(visited_players)
+
     return visited_players
 
 def get_new_player_ids(visited_players):
@@ -46,16 +46,22 @@ def write_csv(new_ids):
 
         for id in new_ids:
             api_player_info = requests.get(
-                'https://api.opendota.com/api/players/' + str(id) + '?api_key=220935B4AB4C12F87AB7B4CB62D6CFBB')
+                'https://api.opendota.com/api/players/' + str(id) + '?api_key=549DB7F6A3D0BD71854A393A1334C7AC')
 
-            if api_player_info.status_code != 200:
+            time.sleep(.3)
+            api_win_percentage_info = requests.get(
+                'https://api.opendota.com/api/players/' + str(id) + '/wl?api_key=549DB7F6A3D0BD71854A393A1334C7AC')
+
+            if api_player_info.status_code != 200 and api_win_percentage_info.status_code != 200:
                 print("API Request Error! Player info not found")
                 time.sleep(.2)
             else:
                 player_info = api_player_info.json()
 
+                win_percentage_info = api_win_percentage_info.json()
+
                 dota_data_writer.writerow(
-                    [player_info["profile"]["account_id"], player_info["mmr_estimate"]["estimate"], player_info["rank_tier"]])
+                    [player_info["profile"]["account_id"], player_info["mmr_estimate"]["estimate"], player_info["rank_tier"], win_percentage_info["win"], win_percentage_info["lose"]])
                 print("New player added to database: " + str(id))
                 time.sleep(.2)
             time.sleep(.5)

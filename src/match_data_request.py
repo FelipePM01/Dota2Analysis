@@ -41,7 +41,7 @@ def get_new_match_ids(visited_matches):
 
                     public_matches_info.append(match_info)
                     print("New match found: " + str(match["match_id"]))
-        print(public_matches_info)
+
         return public_matches_info
 
 def write_csv(new_matches):
