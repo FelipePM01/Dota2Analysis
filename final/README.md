@@ -17,11 +17,11 @@ Notebook descreve as funções de taxa de winrate de herói e jogador.
 
 ## `src`
 
-/src/graph_data.py
-/src/hero_data.py
-/src/match_data_request.py
-/src/performance_data_request.py
-/src/player_data_request.py
+/src/graph_data.py  
+/src/hero_data.py  
+/src/match_data_request.py  
+/src/performance_data_request.py  
+/src/player_data_request.py  
 
 Scripts definem criação de banco de dados específicos.
 Para rodar os scripts basta que toda a pasta src esteja salva na máquina local.
