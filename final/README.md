@@ -5,7 +5,7 @@
 # Equipe - `D2A`
 * `Hugo Carvalho de Almeida Navarro` - `198893`
 * `Matheus Augusto da Silva Cândido` - `241640`
-* `Felipe Pacheco Manoel` - `215347`
+* `Felipe Pacheco Manoel` - `215473`
 
 
 ## Resumo do Projeto
@@ -81,7 +81,7 @@ Link para arquivos src:
 
 
 ## Evolução do Projeto
-
+Os modelos logicos e conceituais se mativerem durante o projeto com exceção da inclusão de alguns campos no modelo conceitual e no modelo lógico relacional que consideramos relevantes e a remoção de outros os quais não tinhamos tal informação disponível. O modelo lógico de grafos teve uma versão inicial que só incluia o nó jogador que era o principal , posteriormente tentamos incluir nós para os heróis e para as partidas , mas por concluir que eles não agregavam valor para o projeto optamos por retornar a versão inicial.
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 
@@ -92,19 +92,78 @@ Link para arquivos src:
  
 * Como se organizam as pessoas em grupos de amigos dentro do DOTA 2?
 * Será utilizada as arestas com peso entre jogadores para tentar achar grupos em que as arestas ponderadas são mais densas entre si quando comparadas aos demais jogadores. A pergunta se encaixa na modalidade de comunidade/modularidade.
+* Para responder essa pergunta foi utilizada a seguinte query:
+~~~cypher
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/FelipePM01/Dota2Analysis/main/final/data/processed/player_data_winrate.csv' AS line
+CREATE (:Jogador {id:line.PLAYER_ID,rank:line.RANK,mmr:line.MMR});
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/FelipePM01/Dota2Analysis/main/final/data/processed/new_graph_data.csv' AS line
+MATCH (j1:Jogador{id:line.PLAYER_1_ID})
+MATCH (j2:Jogador{id:line.PLAYER_2_ID})
+CREATE (j1)-[:jogou_com{vezes:line.VEZES}]->(j2)
+CALL gds.graph.create.cypher(
+  'myGraph',
+  'MATCH (n:Jogador) RETURN id(n) AS id,labels(n) As labels',
+  'MATCH (n)-[r:jogou_com]->(m) RETURN id(n) AS source, id(m) AS target, type(r) AS type, r.vezes AS vezes'
+)
+CALL gds.louvain.stream('myGraph', { relationshipWeightProperty: 'vezes' })
+YIELD nodeId, communityId, intermediateCommunityIds
+RETURN gds.util.asNode(nodeId).id AS id, communityId
+ORDER BY communityId ASC
+~~~
+* Após essa query foi possível observar que cada nó forma a própria comunidade e não ocorreu a formação de grupos de amigos.
 
 #### Pergunta/Análise 2
 * Pergunta 2
    
 * Existem grupos que tendem a se encontrar mais nas filas ranqueadas? Esses grupos correspondem a pessoas com ranking e MMR similares?
 * Será utilizada as arestas entre jogadores para tentar achar grupos em que as arestas são mais densas entre si comparadas aos demais jogadores, em seguida iremos checar as comunidades encontradas para ver se o MMR e o rank são similares. A pergunta se encaixa na modalidade de comunidade/modularidade.
-
-
+* Para responder essa pergunta foi utilizada a seguinte query:
+~~~cypher
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/FelipePM01/Dota2Analysis/main/final/data/processed/player_data_winrate.csv' AS line
+CREATE (:Jogador {id:line.PLAYER_ID,rank:line.RANK,mmr:line.MMR});
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/FelipePM01/Dota2Analysis/main/final/data/processed/new_graph_data.csv' AS line
+MATCH (j1:Jogador{id:line.PLAYER_1_ID})
+MATCH (j2:Jogador{id:line.PLAYER_2_ID})
+CREATE (j1)-[:jogou_com{vezes:line.VEZES}]->(j2)
+CALL gds.graph.create.cypher(
+  'myGraph',
+  'MATCH (n:Jogador) RETURN id(n) AS id,labels(n) As labels',
+  'MATCH (n)-[r:jogou_com]->(m) RETURN id(n) AS source, id(m) AS target, type(r) AS type, r.vezes AS vezes'
+)
+CALL gds.louvain.stream('myGraph')
+YIELD nodeId, communityId, intermediateCommunityIds
+RETURN gds.util.asNode(nodeId).id AS id, communityId,gds.util.asNode(nodeId).mmr AS mmr
+ORDER BY communityId ASC
+~~~
+* Após a realização dessa query foi possível observar que embora haja uma certa semelhança nas faixas de valores dentro das comunidades , ainda assim ocorreu uma variação significativa dentro das comunidades.
 #### Pergunta/Análise 3
 * Pergunta 3
    
 * Existem jogadores que se destacam em relação à centralidade? Caso existam, o que os diferenciam?
 * Utilizando o algoritmo de Pagerank, vamos tentar encontrar os principais jogadores e em seguida comparar seus atributos com a média para entender o que os torna especiais. A pergunta se encaixa na modalidade de centralidade
+
+** Para responder essa pergunta foi utilizada a seguinte query:
+~~~cypher
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/FelipePM01/Dota2Analysis/main/final/data/processed/player_data_winrate.csv' AS line
+CREATE (:Jogador {id:line.PLAYER_ID,rank:line.RANK,mmr:line.MMR});
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/FelipePM01/Dota2Analysis/main/final/data/processed/new_graph_data.csv' AS line
+MATCH (j1:Jogador{id:line.PLAYER_1_ID})
+MATCH (j2:Jogador{id:line.PLAYER_2_ID})
+CREATE (j1)-[:jogou_com{vezes:line.VEZES}]->(j2)
+CALL gds.graph.create.cypher(
+  'myGraph',
+  'MATCH (n:Jogador) RETURN id(n) AS id,labels(n) As labels',
+  'MATCH (n)-[r:jogou_com]->(m) RETURN id(n) AS source, id(m) AS target, type(r) AS type, r.vezes AS vezes'
+)
+CALL gds.pageRank.stream('myGraph', {
+  maxIterations: 20,
+  dampingFactor: 0.85
+})
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).id AS id, score
+ORDER BY score DESC, id ASC
+~~~
+* Após analisar o resultado da query , podemos perceber que a presença de centralidade , no entanto isso aconteceu devido a jogadores com mais de uma partida registrada enquanto a maioria tinha apenas uma partida.
 
 ### Perguntas/Análise Propostas mas Não Implementadas
 
