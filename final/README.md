@@ -45,11 +45,11 @@ Para rodar os scripts basta que toda a pasta src esteja salva na máquina local.
 
 
 ## Resumo do Projeto
-> Criação de um dataset baseado em informações retiradas diretamente do jogo DOTA 2, e posterior análise desse dataset.  
+Criação de um dataset baseado em informações retiradas diretamente do jogo DOTA 2, e posterior análise desse dataset.  
  Com o crescimento constante dos eSports ao redor do mundo, o cenário tende a ser cada vez mais competitivo e disputado. Assim, junto com esses jogos, cresce a necessidade de ferramentas capaz de prover insights aprofundados que fornecam algum tipo de vantagem ao jogador e a equipe. Como objeto de estudo, vimos no DOTA 2 um ambiente rico em informações públicas que podem ser analisadas afim de atingirmos o objetivo citado.
 
 ## Slides da Apresentação
-> [Slides final](slides/final.pdf)
+[Slides final](slides/final.pdf)
 
 ## Modelo Conceitual
 
@@ -84,7 +84,6 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 > ![Modelo Lógico Hierárquico](images/modelo-logico-hierarquico.png)
 
 ## Dataset Publicado
-> Elencar os arquivos/bases preliminares dos datasets serão publicados.
 
 título | link | breve descrição
 ----- | ----- | -----
@@ -98,7 +97,6 @@ título | link | breve descrição
 `<player_data.csv>` | `<./data/interim/player_data.csv>` | `<O arquivo contém uma série de informações referentes a jogadores de partidas já visitadas>`
 
 ## Bases de Dados
-> Elencar as bases de dados fonte utilizadas no projeto.
 
 título da base | link | breve descrição
 ----- | ----- | -----
@@ -125,9 +123,8 @@ api_player_info = requests.get('https://api.opendota.com/api/players/' + Player_
 ~~~
 Link para arquivos src:  
 `<https://github.com/FelipePM01/Dota2Analysis/tree/src_update/final/src>`  
-`<./src>`
+`<./src>`  
 
-> Aqui devem ser apresentadas as operações de construção do dataset:
 * tratamento de dados recebidos por GET/
 * agregação de dados fragmentados obtidos a partir de diferentes chamadas à API
 * integração de dados de vários datasets para criação de queries
