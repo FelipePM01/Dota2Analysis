@@ -1,40 +1,4 @@
-## `data`
-
-/data/interim/hero_data.csv  
-/data/interim/player_data.csv  
-Tabelas descrevem informações associadas a heróis e players, respectivamente.
-
-/data/processed/match_data.csv  
-/data/processed/graph_data.csv  
-/data/processed/performance_data.csv  
-/data/processed/hero_role_data.csv  
-Tabelas descrevem informações de partidas públicas, relações entre jogadores que jogam juntos, performance desses jogadores e papel de heróis, respectivamente.
-
-## `notebooks`
-
-/notebooks/QUERIE-SQL.ipynb   
-Notebook descreve as funções de taxa de winrate de herói e jogador.
-
-## `src`
-
-/src/graph_data.py  
-/src/hero_data.py  
-/src/match_data_request.py  
-/src/performance_data_request.py  
-/src/player_data_request.py  
-
-Scripts definem criação de banco de dados específicos.
-Para rodar os scripts basta que toda a pasta src esteja salva na máquina local.
-
-## `assets`
-
-### Modelo conceitual
-![modelo_conceitual](assets/conceitual.png)  
-
-### Modelo lógico  
-![modelo_logico](assets/logico.png)  
-
-# Modelo para Apresentação da Entrega Prévia do Projeto
+# Modelo para Apresentação da Entrega Final do Projeto
 
 # Projeto `<Dota2Analysis>`
 
@@ -65,6 +29,7 @@ Performance(_Match_ID_,_Player_ID_,Radiant_Team,Level,Hero_ID,Hero_Damage,Hero_H
   Ocupante chave estrangeira -> Partida(Match_ID), Performance(Player_ID)
 ~~~
 
+Modelo Lógico de Grafos
 ![Modelo Lógico de Grafos](assets/logico.png)
 
 ## Dataset Publicado
