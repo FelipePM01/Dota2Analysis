@@ -1,4 +1,4 @@
-# Modelo para Apresentação da Entrega Final do Projeto
+# Apresentação da Entrega Final do Projeto
 
 # Projeto `<Dota2Analysis>`
 
