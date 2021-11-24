@@ -57,32 +57,15 @@ Criação de um dataset baseado em informações retiradas diretamente do jogo D
 
 ## Modelos Lógicos
 
-![modelo_logico](assets/logico.png)  
-> Coloque aqui os modelos lógicos dos bancos de dados relacionados aos modelos conceituais. Para o modelo relacional, sugere-se o formato a seguir. Para outros modelos lógicos, sugere-se aqueles apresentados em sala.
-
-> Exemplo de modelo lógico relacional
+Modelo lógico relacional
 ~~~
-PESSOA(_Código_, Nome, Telefone)
-ARMÁRIO(_Código_, Tamanho, Ocupante)
-  Ocupante chave estrangeira -> PESSOA(Código)
+Partidas(_Match_ID_,Average_MMR,Player_1_ID,Player_2_ID,Player_3_ID,Player_4_ID,Player_5_ID,Player_6_ID,Player_7_ID,Player_8_ID,Player_9_ID,Player_10_ID,Radiant_Win,First_Blood_Time,Duration)
+Jogador(_Player ID_,MMR, Rank,Win,Lose)
+Performance(_Match_ID_,_Player_ID_,Radiant_Team,Level,Hero_ID,Hero_Damage,Hero_Healing,Damage_Taken,Tower_Damage,Kills,Assists,Deaths,KDA,Gold_Per_Minute,Gold_Spent,Experience_Per_Minute,Last_Hits,Item_0,Item_1,Item_2,Item_3,Item_4,Win)
+  Ocupante chave estrangeira -> Partida(Match_ID), Performance(Player_ID)
 ~~~
 
-> Para o modelo de grafos de propriedades, utilize este
-> [modelo de base](https://docs.google.com/presentation/d/10RN7bDKUka_Ro2_41WyEE76Wxm4AioiJOrsh6BRY3Kk/edit?usp=sharing) para construir o seu.
-> Coloque a imagem do PNG do seu modelo lógico como ilustrado abaixo (a imagem estará na pasta `image`):
->
-> ![Modelo Lógico de Grafos](images/modelo-logico-grafos.png)
-
-> Você pode usar um grafo ilustrando as classes, como este:
-> ![Modelo Lógico de Grafos de Conhecimento](images/grafo-conhecimento-classes.png)
->
-> Além de outro com exemplo de instâncias, como este:
-> ![Modelo Lógico de Grafos](images/grafo-conhecimento-exemplo.png)
-
-> Para modelos hierárquicos (XML e JSON), utilize um formato
-> conforme o abaixo:
-
-> ![Modelo Lógico Hierárquico](images/modelo-logico-hierarquico.png)
+![Modelo Lógico de Grafos](assets/logico.png)
 
 ## Dataset Publicado
 
@@ -144,10 +127,6 @@ Link para arquivos src:
 > Liste aqui as perguntas de pesquisa/análise e respectivas análises. Nem todas as perguntas precisam de queries que as implementam. É possível haver perguntas em que a solução é apenas descrita para demonstrar o potencial da base. Abaixo são ilustradas três perguntas, mas pode ser um número maior a critério da equipe.
 >
 ### Perguntas/Análise com Resposta Implementada
-
-> As respostas às perguntas podem devem ser ilustradas da forma mais rica possível com tabelas resultantes, grafos ou gráficos que apresentam os resultados. Os resultados podem ser analisados e comentados. Veja um exemplo de figura ilustrando uma comunidade detectada no Cytoscape:
-
-> ![Comunidade no Cytoscape](images/cytoscape-comunidade.png)
 
 #### Pergunta/Análise 1
 * Pergunta 1
