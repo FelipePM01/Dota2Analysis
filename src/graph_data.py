@@ -52,7 +52,10 @@ def create_jogador(match_id, duo_id_list):
         dota_data_writer = csv.writer(dota_data_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
         for duo in duo_id_list:
-            dota_data_writer.writerow([match_id, duo[0], duo[1]])
+            if duo[0] > duo[1]:
+                dota_data_writer.writerow([match_id, duo[0], duo[1]])
+            else:
+                dota_data_writer.writerow([match_id, duo[1], duo[0]])
 
 def ocorrencies_count():
     return
