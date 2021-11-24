@@ -57,6 +57,7 @@ Criação de um dataset baseado em informações retiradas diretamente do jogo D
 
 ## Modelos Lógicos
 
+![modelo_logico](assets/logico.png)  
 > Coloque aqui os modelos lógicos dos bancos de dados relacionados aos modelos conceituais. Para o modelo relacional, sugere-se o formato a seguir. Para outros modelos lógicos, sugere-se aqueles apresentados em sala.
 
 > Exemplo de modelo lógico relacional
@@ -169,18 +170,26 @@ Link para arquivos src:
 ### Perguntas/Análise Propostas mas Não Implementadas
 
 #### Pergunta/Análise 1
-> * Pergunta 1
->   
->   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
+* Pergunta 1
+  
+* Qual herói de uma certa função tem a maior winrate?
 
 #### Pergunta/Análise 2
-> * Pergunta 2
->   
->   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
+* Pergunta 2
+   
+* Qual item tem a maior winrate dado um determinado herói?
 
 #### Pergunta/Análise 3
-> * Pergunta 3
->   
->   * Explicação em linhas gerais de como a base pode ser usada para responder esta pergunta e a sua relevância.
+* Pergunta 3
+  
+* Qual a taxa de jogadores que saem das partidas antes de seu término?
 
-> Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
+#### Pergunta/Análise 4
+* Pergunta 4
+  
+* Qual é o herói mais popular no geral? E em um rank específico?
+
+#### Pergunta/Análise 5
+* Pergunta 5
+  
+* Como se comporta a winrate de jogadores conforme o ouro ou experiencia por minuto  aumenta? Esse comportamento muda dependendo do rank?
