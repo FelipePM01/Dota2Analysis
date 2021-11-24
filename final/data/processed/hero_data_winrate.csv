@@ -1,123 +1,123 @@
-"HERO_ID","NOME","ATRIBUTO_PRIMARIO","TIPO_ATAQUE","WINRATE_PORCENTAGEM"
-"1","Anti-Mage","agi","Melee","48"
-"2","Axe","str","Melee","69"
-"3","Bane","int","Ranged","51"
-"4","Bloodseeker","agi","Melee","55"
-"5","Crystal Maiden","int","Ranged","50"
-"6","Drow Ranger","agi","Ranged","74"
-"7","Earthshaker","str","Melee","52"
-"8","Juggernaut","agi","Melee","58"
-"9","Mirana","agi","Ranged","53"
-"10","Morphling","agi","Ranged","50"
-"11","Shadow Fiend","agi","Ranged","34"
-"12","Phantom Lancer","agi","Melee","55"
-"13","Puck","int","Ranged","58"
-"14","Pudge","str","Melee","51"
-"15","Razor","agi","Ranged","44"
-"16","Sand King","str","Melee","50"
-"17","Storm Spirit","int","Ranged","30"
-"18","Sven","str","Melee","58"
-"19","Tiny","str","Melee","41"
-"20","Vengeful Spirit","agi","Ranged","47"
-"21","Windranger","int","Ranged","46"
-"22","Zeus","int","Ranged","48"
-"23","Kunkka","str","Melee","55"
-"25","Lina","int","Ranged","53"
-"26","Lion","int","Ranged","34"
-"27","Shadow Shaman","int","Ranged","48"
-"28","Slardar","str","Melee","40"
-"29","Tidehunter","str","Melee","43"
-"30","Witch Doctor","int","Ranged","55"
-"31","Lich","int","Ranged","61"
-"32","Riki","agi","Melee","45"
-"33","Enigma","int","Ranged","65"
-"34","Tinker","int","Ranged","44"
-"35","Sniper","agi","Ranged","72"
-"36","Necrophos","int","Ranged","57"
-"37","Warlock","int","Ranged","85"
-"38","Beastmaster","str","Melee","63"
-"39","Queen of Pain","int","Ranged","48"
-"40","Venomancer","agi","Ranged","53"
-"41","Faceless Void","agi","Melee","29"
-"42","Wraith King","str","Melee","47"
-"43","Death Prophet","int","Ranged","25"
-"44","Phantom Assassin","agi","Melee","42"
-"45","Pugna","int","Ranged","60"
-"46","Templar Assassin","agi","Ranged","51"
-"47","Viper","agi","Ranged","48"
-"48","Luna","agi","Ranged","46"
-"49","Dragon Knight","str","Melee","54"
-"50","Dazzle","int","Ranged","54"
-"51","Clockwerk","str","Melee","35"
-"52","Leshrac","int","Ranged","9"
-"53","Nature's Prophet","int","Ranged","61"
-"54","Lifestealer","str","Melee","43"
-"55","Dark Seer","int","Melee","40"
-"56","Clinkz","agi","Ranged","57"
-"57","Omniknight","str","Melee","66"
-"58","Enchantress","int","Ranged","60"
-"59","Huskar","str","Ranged","83"
-"60","Night Stalker","str","Melee","44"
-"61","Broodmother","agi","Melee","72"
-"62","Bounty Hunter","agi","Melee","50"
-"63","Weaver","agi","Ranged","43"
-"64","Jakiro","int","Ranged","74"
-"65","Batrider","int","Ranged","25"
-"66","Chen","int","Ranged","100"
-"67","Spectre","agi","Melee","36"
-"68","Ancient Apparition","int","Ranged","59"
-"69","Doom","str","Melee","15"
-"70","Ursa","agi","Melee","43"
-"71","Spirit Breaker","str","Melee","47"
-"72","Gyrocopter","agi","Ranged","58"
-"73","Alchemist","str","Melee","45"
-"74","Invoker","int","Ranged","50"
-"75","Silencer","int","Ranged","46"
-"76","Outworld Devourer","int","Ranged","56"
-"77","Lycan","str","Melee","14"
-"78","Brewmaster","str","Melee","70"
-"79","Shadow Demon","int","Ranged","25"
-"80","Lone Druid","agi","Ranged","33"
-"81","Chaos Knight","str","Melee","56"
-"82","Meepo","agi","Melee","33"
-"83","Treant Protector","str","Melee","50"
-"84","Ogre Magi","int","Melee","62"
-"85","Undying","str","Melee","57"
-"86","Rubick","int","Ranged","49"
-"87","Disruptor","int","Ranged","48"
-"88","Nyx Assassin","agi","Melee","50"
-"89","Naga Siren","agi","Melee","66"
-"90","Keeper of the Light","int","Ranged","35"
-"91","Io","str","Ranged","55"
-"92","Visage","int","Ranged","44"
-"93","Slark","agi","Melee","53"
-"94","Medusa","agi","Ranged","52"
-"95","Troll Warlord","agi","Ranged","45"
-"96","Centaur Warrunner","str","Melee","52"
-"97","Magnus","str","Melee","49"
-"98","Timbersaw","str","Melee","23"
-"99","Bristleback","str","Melee","41"
-"100","Tusk","str","Melee","45"
-"101","Skywrath Mage","int","Ranged","53"
-"102","Abaddon","str","Melee","60"
-"103","Elder Titan","str","Melee","0"
-"104","Legion Commander","str","Melee","49"
-"105","Techies","int","Ranged","29"
-"106","Ember Spirit","agi","Melee","39"
-"107","Earth Spirit","str","Melee","40"
-"108","Underlord","str","Melee","66"
-"109","Terrorblade","agi","Melee","41"
-"110","Phoenix","str","Ranged","33"
-"111","Oracle","int","Ranged","53"
-"112","Winter Wyvern","int","Ranged","57"
-"113","Arc Warden","agi","Ranged","33"
-"114","Monkey King","agi","Melee","51"
-"119","Dark Willow","int","Ranged","53"
-"120","Pangolier","agi","Melee","45"
-"121","Grimstroke","int","Ranged","35"
-"123","Hoodwink","agi","Ranged","51"
-"126","Void Spirit","int","Melee","36"
-"128","Snapfire","str","Ranged","38"
-"129","Mars","str","Melee","44"
-"135","Dawnbreaker","str","Melee","58"
-"136","Marci","str","Melee","52"
+HERO_ID,NOME,ATRIBUTO_PRIMARIO,TIPO_ATAQUE,WINRATE_PORCENTAGEM
+1,Anti-Mage,agi,Melee,48
+2,Axe,str,Melee,69
+3,Bane,int,Ranged,51
+4,Bloodseeker,agi,Melee,55
+5,Crystal Maiden,int,Ranged,50
+6,Drow Ranger,agi,Ranged,74
+7,Earthshaker,str,Melee,52
+8,Juggernaut,agi,Melee,58
+9,Mirana,agi,Ranged,53
+10,Morphling,agi,Ranged,50
+11,Shadow Fiend,agi,Ranged,34
+12,Phantom Lancer,agi,Melee,55
+13,Puck,int,Ranged,58
+14,Pudge,str,Melee,51
+15,Razor,agi,Ranged,44
+16,Sand King,str,Melee,50
+17,Storm Spirit,int,Ranged,30
+18,Sven,str,Melee,58
+19,Tiny,str,Melee,41
+20,Vengeful Spirit,agi,Ranged,47
+21,Windranger,int,Ranged,46
+22,Zeus,int,Ranged,48
+23,Kunkka,str,Melee,55
+25,Lina,int,Ranged,53
+26,Lion,int,Ranged,34
+27,Shadow Shaman,int,Ranged,48
+28,Slardar,str,Melee,40
+29,Tidehunter,str,Melee,43
+30,Witch Doctor,int,Ranged,55
+31,Lich,int,Ranged,61
+32,Riki,agi,Melee,45
+33,Enigma,int,Ranged,65
+34,Tinker,int,Ranged,44
+35,Sniper,agi,Ranged,72
+36,Necrophos,int,Ranged,57
+37,Warlock,int,Ranged,85
+38,Beastmaster,str,Melee,63
+39,Queen of Pain,int,Ranged,48
+40,Venomancer,agi,Ranged,53
+41,Faceless Void,agi,Melee,29
+42,Wraith King,str,Melee,47
+43,Death Prophet,int,Ranged,25
+44,Phantom Assassin,agi,Melee,42
+45,Pugna,int,Ranged,60
+46,Templar Assassin,agi,Ranged,51
+47,Viper,agi,Ranged,48
+48,Luna,agi,Ranged,46
+49,Dragon Knight,str,Melee,54
+50,Dazzle,int,Ranged,54
+51,Clockwerk,str,Melee,35
+52,Leshrac,int,Ranged,9
+53,Nature's Prophet,int,Ranged,61
+54,Lifestealer,str,Melee,43
+55,Dark Seer,int,Melee,40
+56,Clinkz,agi,Ranged,57
+57,Omniknight,str,Melee,66
+58,Enchantress,int,Ranged,60
+59,Huskar,str,Ranged,83
+60,Night Stalker,str,Melee,44
+61,Broodmother,agi,Melee,72
+62,Bounty Hunter,agi,Melee,50
+63,Weaver,agi,Ranged,43
+64,Jakiro,int,Ranged,74
+65,Batrider,int,Ranged,25
+66,Chen,int,Ranged,100
+67,Spectre,agi,Melee,36
+68,Ancient Apparition,int,Ranged,59
+69,Doom,str,Melee,15
+70,Ursa,agi,Melee,43
+71,Spirit Breaker,str,Melee,47
+72,Gyrocopter,agi,Ranged,58
+73,Alchemist,str,Melee,45
+74,Invoker,int,Ranged,50
+75,Silencer,int,Ranged,46
+76,Outworld Devourer,int,Ranged,56
+77,Lycan,str,Melee,14
+78,Brewmaster,str,Melee,70
+79,Shadow Demon,int,Ranged,25
+80,Lone Druid,agi,Ranged,33
+81,Chaos Knight,str,Melee,56
+82,Meepo,agi,Melee,33
+83,Treant Protector,str,Melee,50
+84,Ogre Magi,int,Melee,62
+85,Undying,str,Melee,57
+86,Rubick,int,Ranged,49
+87,Disruptor,int,Ranged,48
+88,Nyx Assassin,agi,Melee,50
+89,Naga Siren,agi,Melee,66
+90,Keeper of the Light,int,Ranged,35
+91,Io,str,Ranged,55
+92,Visage,int,Ranged,44
+93,Slark,agi,Melee,53
+94,Medusa,agi,Ranged,52
+95,Troll Warlord,agi,Ranged,45
+96,Centaur Warrunner,str,Melee,52
+97,Magnus,str,Melee,49
+98,Timbersaw,str,Melee,23
+99,Bristleback,str,Melee,41
+100,Tusk,str,Melee,45
+101,Skywrath Mage,int,Ranged,53
+102,Abaddon,str,Melee,60
+103,Elder Titan,str,Melee,0
+104,Legion Commander,str,Melee,49
+105,Techies,int,Ranged,29
+106,Ember Spirit,agi,Melee,39
+107,Earth Spirit,str,Melee,40
+108,Underlord,str,Melee,66
+109,Terrorblade,agi,Melee,41
+110,Phoenix,str,Ranged,33
+111,Oracle,int,Ranged,53
+112,Winter Wyvern,int,Ranged,57
+113,Arc Warden,agi,Ranged,33
+114,Monkey King,agi,Melee,51
+119,Dark Willow,int,Ranged,53
+120,Pangolier,agi,Melee,45
+121,Grimstroke,int,Ranged,35
+123,Hoodwink,agi,Ranged,51
+126,Void Spirit,int,Melee,36
+128,Snapfire,str,Ranged,38
+129,Mars,str,Melee,44
+135,Dawnbreaker,str,Melee,58
+136,Marci,str,Melee,52
