@@ -1,123 +1,123 @@
-nome,atributo_primario,tipo_ataque
-Anti-Mage,agi,Melee
-Axe,str,Melee
-Bane,int,Ranged
-Bloodseeker,agi,Melee
-Crystal Maiden,int,Ranged
-Drow Ranger,agi,Ranged
-Earthshaker,str,Melee
-Juggernaut,agi,Melee
-Mirana,agi,Ranged
-Morphling,agi,Ranged
-Shadow Fiend,agi,Ranged
-Phantom Lancer,agi,Melee
-Puck,int,Ranged
-Pudge,str,Melee
-Razor,agi,Ranged
-Sand King,str,Melee
-Storm Spirit,int,Ranged
-Sven,str,Melee
-Tiny,str,Melee
-Vengeful Spirit,agi,Ranged
-Windranger,int,Ranged
-Zeus,int,Ranged
-Kunkka,str,Melee
-Lina,int,Ranged
-Lion,int,Ranged
-Shadow Shaman,int,Ranged
-Slardar,str,Melee
-Tidehunter,str,Melee
-Witch Doctor,int,Ranged
-Lich,int,Ranged
-Riki,agi,Melee
-Enigma,int,Ranged
-Tinker,int,Ranged
-Sniper,agi,Ranged
-Necrophos,int,Ranged
-Warlock,int,Ranged
-Beastmaster,str,Melee
-Queen of Pain,int,Ranged
-Venomancer,agi,Ranged
-Faceless Void,agi,Melee
-Wraith King,str,Melee
-Death Prophet,int,Ranged
-Phantom Assassin,agi,Melee
-Pugna,int,Ranged
-Templar Assassin,agi,Ranged
-Viper,agi,Ranged
-Luna,agi,Ranged
-Dragon Knight,str,Melee
-Dazzle,int,Ranged
-Clockwerk,str,Melee
-Leshrac,int,Ranged
-Nature's Prophet,int,Ranged
-Lifestealer,str,Melee
-Dark Seer,int,Melee
-Clinkz,agi,Ranged
-Omniknight,str,Melee
-Enchantress,int,Ranged
-Huskar,str,Ranged
-Night Stalker,str,Melee
-Broodmother,agi,Melee
-Bounty Hunter,agi,Melee
-Weaver,agi,Ranged
-Jakiro,int,Ranged
-Batrider,int,Ranged
-Chen,int,Ranged
-Spectre,agi,Melee
-Ancient Apparition,int,Ranged
-Doom,str,Melee
-Ursa,agi,Melee
-Spirit Breaker,str,Melee
-Gyrocopter,agi,Ranged
-Alchemist,str,Melee
-Invoker,int,Ranged
-Silencer,int,Ranged
-Outworld Devourer,int,Ranged
-Lycan,str,Melee
-Brewmaster,str,Melee
-Shadow Demon,int,Ranged
-Lone Druid,agi,Ranged
-Chaos Knight,str,Melee
-Meepo,agi,Melee
-Treant Protector,str,Melee
-Ogre Magi,int,Melee
-Undying,str,Melee
-Rubick,int,Ranged
-Disruptor,int,Ranged
-Nyx Assassin,agi,Melee
-Naga Siren,agi,Melee
-Keeper of the Light,int,Ranged
-Io,str,Ranged
-Visage,int,Ranged
-Slark,agi,Melee
-Medusa,agi,Ranged
-Troll Warlord,agi,Ranged
-Centaur Warrunner,str,Melee
-Magnus,str,Melee
-Timbersaw,str,Melee
-Bristleback,str,Melee
-Tusk,str,Melee
-Skywrath Mage,int,Ranged
-Abaddon,str,Melee
-Elder Titan,str,Melee
-Legion Commander,str,Melee
-Techies,int,Ranged
-Ember Spirit,agi,Melee
-Earth Spirit,str,Melee
-Underlord,str,Melee
-Terrorblade,agi,Melee
-Phoenix,str,Ranged
-Oracle,int,Ranged
-Winter Wyvern,int,Ranged
-Arc Warden,agi,Ranged
-Monkey King,agi,Melee
-Dark Willow,int,Ranged
-Pangolier,agi,Melee
-Grimstroke,int,Ranged
-Hoodwink,agi,Ranged
-Void Spirit,int,Melee
-Snapfire,str,Ranged
-Mars,str,Melee
-Dawnbreaker,str,Melee
-Marci,str,Melee
+id,nome,atributo_primario,tipo_ataque
+1,Anti-Mage,agi,Melee
+2,Axe,str,Melee
+3,Bane,int,Ranged
+4,Bloodseeker,agi,Melee
+5,Crystal Maiden,int,Ranged
+6,Drow Ranger,agi,Ranged
+7,Earthshaker,str,Melee
+8,Juggernaut,agi,Melee
+9,Mirana,agi,Ranged
+10,Morphling,agi,Ranged
+11,Shadow Fiend,agi,Ranged
+12,Phantom Lancer,agi,Melee
+13,Puck,int,Ranged
+14,Pudge,str,Melee
+15,Razor,agi,Ranged
+16,Sand King,str,Melee
+17,Storm Spirit,int,Ranged
+18,Sven,str,Melee
+19,Tiny,str,Melee
+20,Vengeful Spirit,agi,Ranged
+21,Windranger,int,Ranged
+22,Zeus,int,Ranged
+23,Kunkka,str,Melee
+25,Lina,int,Ranged
+26,Lion,int,Ranged
+27,Shadow Shaman,int,Ranged
+28,Slardar,str,Melee
+29,Tidehunter,str,Melee
+30,Witch Doctor,int,Ranged
+31,Lich,int,Ranged
+32,Riki,agi,Melee
+33,Enigma,int,Ranged
+34,Tinker,int,Ranged
+35,Sniper,agi,Ranged
+36,Necrophos,int,Ranged
+37,Warlock,int,Ranged
+38,Beastmaster,str,Melee
+39,Queen of Pain,int,Ranged
+40,Venomancer,agi,Ranged
+41,Faceless Void,agi,Melee
+42,Wraith King,str,Melee
+43,Death Prophet,int,Ranged
+44,Phantom Assassin,agi,Melee
+45,Pugna,int,Ranged
+46,Templar Assassin,agi,Ranged
+47,Viper,agi,Ranged
+48,Luna,agi,Ranged
+49,Dragon Knight,str,Melee
+50,Dazzle,int,Ranged
+51,Clockwerk,str,Melee
+52,Leshrac,int,Ranged
+53,Nature's Prophet,int,Ranged
+54,Lifestealer,str,Melee
+55,Dark Seer,int,Melee
+56,Clinkz,agi,Ranged
+57,Omniknight,str,Melee
+58,Enchantress,int,Ranged
+59,Huskar,str,Ranged
+60,Night Stalker,str,Melee
+61,Broodmother,agi,Melee
+62,Bounty Hunter,agi,Melee
+63,Weaver,agi,Ranged
+64,Jakiro,int,Ranged
+65,Batrider,int,Ranged
+66,Chen,int,Ranged
+67,Spectre,agi,Melee
+68,Ancient Apparition,int,Ranged
+69,Doom,str,Melee
+70,Ursa,agi,Melee
+71,Spirit Breaker,str,Melee
+72,Gyrocopter,agi,Ranged
+73,Alchemist,str,Melee
+74,Invoker,int,Ranged
+75,Silencer,int,Ranged
+76,Outworld Devourer,int,Ranged
+77,Lycan,str,Melee
+78,Brewmaster,str,Melee
+79,Shadow Demon,int,Ranged
+80,Lone Druid,agi,Ranged
+81,Chaos Knight,str,Melee
+82,Meepo,agi,Melee
+83,Treant Protector,str,Melee
+84,Ogre Magi,int,Melee
+85,Undying,str,Melee
+86,Rubick,int,Ranged
+87,Disruptor,int,Ranged
+88,Nyx Assassin,agi,Melee
+89,Naga Siren,agi,Melee
+90,Keeper of the Light,int,Ranged
+91,Io,str,Ranged
+92,Visage,int,Ranged
+93,Slark,agi,Melee
+94,Medusa,agi,Ranged
+95,Troll Warlord,agi,Ranged
+96,Centaur Warrunner,str,Melee
+97,Magnus,str,Melee
+98,Timbersaw,str,Melee
+99,Bristleback,str,Melee
+100,Tusk,str,Melee
+101,Skywrath Mage,int,Ranged
+102,Abaddon,str,Melee
+103,Elder Titan,str,Melee
+104,Legion Commander,str,Melee
+105,Techies,int,Ranged
+106,Ember Spirit,agi,Melee
+107,Earth Spirit,str,Melee
+108,Underlord,str,Melee
+109,Terrorblade,agi,Melee
+110,Phoenix,str,Ranged
+111,Oracle,int,Ranged
+112,Winter Wyvern,int,Ranged
+113,Arc Warden,agi,Ranged
+114,Monkey King,agi,Melee
+119,Dark Willow,int,Ranged
+120,Pangolier,agi,Melee
+121,Grimstroke,int,Ranged
+123,Hoodwink,agi,Ranged
+126,Void Spirit,int,Melee
+128,Snapfire,str,Ranged
+129,Mars,str,Melee
+135,Dawnbreaker,str,Melee
+136,Marci,str,Melee
